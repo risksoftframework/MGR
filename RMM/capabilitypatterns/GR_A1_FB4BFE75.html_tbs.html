@@ -1,0 +1,716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es" xml:lang="es" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Patr&oacute;n de posibilidad: A1. Planificaci&oacute;n</title>
+<meta name="uma.type" content="CapabilityPattern">
+<meta name="uma.name" content="GR_A1">
+<meta name="uma.presentationName" content="A1. Planificaci&oacute;n">
+<meta name="element_type" content="other">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ActivityTreeTable.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ProcessElementPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/processElementData.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var defaultQueryStr = '?proc=_YaMCUaz1EeuleM-t5CAq6g&path=_YaMCUaz1EeuleM-t5CAq6g';
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=null;
+					contentPage.preload(imgPath, backPath, nodeInfo,  defaultQueryStr, false, true, true);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top">
+<div autoWrap="true">
+<div id="page-guid" value="_YaMCUaz1EeuleM-t5CAq6g"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Patr&oacute;n de posibilidad: A1. Planificaci&oacute;n</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td><td width="100%" class="expandCollapseLink" align="right"><a name="mainIndex" href="./../../index.htm"></a><script language="JavaScript" type="text/javascript" src="./../../scripts/treebrowser.js"></script></td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/capabilitypattern.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="middle">
+<td class="tab"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_Description" href="./../../RMM/capabilitypatterns/GR_A1_FB4BFE75.html_desc.html">Descripci&oacute;n</a></td><td width="21"><img src="./../../images/tab_middle-i_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WBS" href="./../../RMM/capabilitypatterns/GR_A1_FB4BFE75.html_wbs.html"><span style="white-space:nowrap;">Estructura de desglose de trabajo</span></a></td><td width="1"><img src="./../../images/tab_middle-i_a.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="activeTab"><span style="white-space:nowrap;">Asignaci&oacute;n de equipos</span></td><td width="21"><img src="./../../images/tab_middle-a_i.gif" width="21" height="17" align="absmiddle" alt="" title=""></td><td nowrap class="tab"><a class="tab" id="TAB_WPBS" href="./../../RMM/capabilitypatterns/GR_A1_FB4BFE75.html_wpbs.html"><span style="white-space:nowrap;">Utilizaci&oacute;n del producto de trabajo</span></a></td><td width="21"><img src="./../../images/tab_end-i.gif" width="21" height="17" alt="" title=""></td><td width="50%"><img src="./../../images/shim.gif" width="10" height="17" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="4"><img src="./../../images/shim.gif" alt="" title="" height="2"></td><td><img src="./../../images/tab_space_middle.gif" width="21" height="2" alt="" title=""></td><td class="activeTab"><img src="./../../images/shim.gif" width="10" height="2" alt="" title=""></td><td><img src="./../../images/tab_space.gif" width="21" height="2" alt="" title=""></td><td colspan="3"><img src="./../../images/shim.gif" height="2" alt="" title=""></td>
+</tr>
+<tr>
+<td colspan="10" class="activeTab"><img src="./../../images/shim.gif" height="5" alt="" title=""></td>
+</tr>
+</table>
+<div class="sectionHeading">Anomal&iacute;a del equipo</div>
+<div class="sectionContent">
+<div id="treeContent"></div>
+<script language="JavaScript">
+contentPage.processPage.treeTable.data = {
+title: "Anomalía del equipo", summary: "Anomalía del equipo", 
+columns: [
+["presentation_name", "Elemento de desglose"],
+["model_info", "Información del modelo"],
+["teams", "Equipo"],
+["type", "Tipo"],
+["is_planned", "Planeado"],
+["has_multiple_occurrences", "Varias apariciones"],
+["is_optional", "Opcional"]],
+rows: [
+
+{id: "33347e53", parentId: "", relPath: ",_Q54iua0uEeuleM-t5CAq6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "GD", title: "Grupo Directivo", url: "./../../RMM/capabilitypatterns/GD_C1AAE55E.html", 
+	predecessors: "", info: "", type: "Descriptor de roles", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "332dedb5", parentId: "33347e53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.01", title: "A1.01: Establecer o actualizar las categorías de riesgos y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/GR_A1.01_49EE0D0A.html", 
+	predecessors: "", info: "Actúa como adicional", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "958c6320", parentId: "33347e53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.02", title: "A1.02: Definir o actualizar los criterios del riesgo del activo", url: "./../../RMM/capabilitypatterns/GR_A1.02_38872120.html", 
+	predecessors: "", info: "Actúa como adicional", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8b6c7d92", parentId: "33347e53", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.03", title: "A1.03: Establecer o actualizar el plan de gestión de riesgos (PGR) del activo", url: "./../../RMM/capabilitypatterns/GR_A1.03_43250130.html", 
+	predecessors: "", info: "Actúa como adicional", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "d9970b40", parentId: "", relPath: ",_Q54iu60uEeuleM-t5CAq6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "META", title: "Miembros del Equipo de Trabajo del Activo", url: "./../../RMM/capabilitypatterns/META_35229B33.html", 
+	predecessors: "", info: "", type: "Descriptor de roles", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8c3a2356", parentId: "d9970b40", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.03", title: "A1.03: Establecer o actualizar el plan de gestión de riesgos (PGR) del activo", url: "./../../RMM/capabilitypatterns/GR_A1.03_43250130.html", 
+	predecessors: "", info: "Actúa como adicional", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9647ac19", parentId: "", relPath: ",_Q54ita0uEeuleM-t5CAq6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "RGRA", title: "Responsable de la Gestión de Riesgos del Activo", url: "./../../RMM/capabilitypatterns/RGRA_FD19033F.html", 
+	predecessors: "", info: "", type: "Descriptor de roles", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "385f73dd", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_AFR_GRA", title: "Acta de asignación de funciones y responsabilidades en la GR del Activo", url: "./../../RMM/capabilitypatterns/WP_Acta_AFR_GRA_1AA53345.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8f8989de", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_CR", title: "Criterios del riesgo", url: "./../../RMM/capabilitypatterns/WP_CR_585E794C.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "86bc2b5a", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IS_PGRA", title: "Informe de seguimiento al PGR del activo", url: "./../../RMM/capabilitypatterns/WP_IS_PGRA_50DCADC0.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e0f2d9a8", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IS_PTR", title: "Informe de seguimiento al plan de tratamiento de riesgos", url: "./../../RMM/capabilitypatterns/WP_IS_PTR_F524A166.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "82a8288e", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IS_PM_PGRA", title: "Informe de seguimiento del Plan de mejora al PGR del activo", url: "./../../RMM/capabilitypatterns/WP_IS_PM_PGRA_26D57BC9.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9218fb7c", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_CR", title: "Informes de validación a los Criterios del riesgo ", url: "./../../RMM/capabilitypatterns/WP_IV_CR_42DA47C3.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "343104f1", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_PGRA", title: "Informes de validación al PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_IV_PGRA_9E92541D.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "80da1dff", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LA", title: "Lecciones aprendidas", url: "./../../RMM/capabilitypatterns/WP_LA_8E00620A.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "82775943", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCFRA", title: "Lista de categorías y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCFRA_CDBE04ED.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3d6878e9", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCSRA", title: "Lista de categorías y subcategorías de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCSRA_29761147.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3ad389b5", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PRiesgo", title: "Perfil de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_PRiesgo_D91FD56C.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e22f0395", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PCOM_PGRA", title: "Plan de comunicación del PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_PCOM_PGRA_765D3F9F.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "893d7f83", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PGRA", title: "Plan de Gestión de Riesgos del Activo", url: "./../../RMM/capabilitypatterns/WP_PGRA_6BAD3B02.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "33200a87", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PM_PGRA", title: "Plan de Mejora al PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_PM_PGRA_E0C97DD8.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8ec87ce9", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_RR", title: "Registro del riesgo", url: "./../../RMM/capabilitypatterns/WP_RR_9313D77B.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e267dd46", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_Apr_PGRA", title: "Acta de aprobación del PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_Acta_Apr_PGRA_55162D84.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "30cd25bd", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_AFR_GRA", title: "Acta de asignación de funciones y responsabilidades en la GR del Activo", url: "./../../RMM/capabilitypatterns/WP_Acta_AFR_GRA_1AA53345.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "395d42b4", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_CR", title: "Criterios del riesgo", url: "./../../RMM/capabilitypatterns/WP_CR_585E794C.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3856f120", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_CR", title: "Informes de validación a los Criterios del riesgo ", url: "./../../RMM/capabilitypatterns/WP_IV_CR_42DA47C3.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dd5d906d", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_PGRA", title: "Informes de validación al PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_IV_PGRA_9E92541D.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "906f3e08", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCFRA", title: "Lista de categorías y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCFRA_CDBE04ED.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "85536928", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCSRA", title: "Lista de categorías y subcategorías de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCSRA_29761147.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dff2bbcc", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PCOM_PGRA", title: "Plan de comunicación del PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_PCOM_PGRA_765D3F9F.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "375bec7e", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PGRA", title: "Plan de Gestión de Riesgos del Activo", url: "./../../RMM/capabilitypatterns/WP_PGRA_6BAD3B02.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "899fe086", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.01", title: "A1.01: Establecer o actualizar las categorías de riesgos y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/GR_A1.01_49EE0D0A.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8f74576b", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.02", title: "A1.02: Definir o actualizar los criterios del riesgo del activo", url: "./../../RMM/capabilitypatterns/GR_A1.02_38872120.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "89838db1", parentId: "9647ac19", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.03", title: "A1.03: Establecer o actualizar el plan de gestión de riesgos (PGR) del activo", url: "./../../RMM/capabilitypatterns/GR_A1.03_43250130.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "896143d9", parentId: "", relPath: ",_Q54is60uEeuleM-t5CAq6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "RGRN", title: "Responsable de la Gestión de Riesgos del Negocio", url: "./../../RMM/capabilitypatterns/RGRN_ABFED6F5.html", 
+	predecessors: "", info: "", type: "Descriptor de roles", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "36c1e810", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_AFR_EGR", title: "Acta de asignación de funciones y responsabilidades en la EGR", url: "./../../RMM/capabilitypatterns/WP_Acta_AFR_EGR_2445EFB3.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "93f5cf3c", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_AR", title: "Asignación de Recursos", url: "./../../RMM/capabilitypatterns/WP_AR_E9B86E64.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "95ad6cf2", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_EGR", title: "Estrategia de Gestión de Riesgos", url: "./../../RMM/capabilitypatterns/WP_EGR_BFB13C6D.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3332f102", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IM_EGR", title: "Informe de medición de la EGR", url: "./../../RMM/capabilitypatterns/WP_IM_EGR_DE39F1C2.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3a3ea5b6", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IS_EGR", title: "Informe de seguimiento de la EGR", url: "./../../RMM/capabilitypatterns/WP_IS_EGR_404ABBAD.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e28ef039", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IS_PM_EGR", title: "Informe de seguimiento del Plan de mejora a la EGR", url: "./../../RMM/capabilitypatterns/WP_IS_PM_EGR_9C02C807.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "382e000c", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_PM_EGR", title: "Informe de validación al plan de mejora a la EGR ", url: "./../../RMM/capabilitypatterns/WP_IV_PM_EGR_71FB9610.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3f03e691", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_EGR", title: "Informe de validación de la EGR", url: "./../../RMM/capabilitypatterns/WP_IV_EGR_79A53E7C.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8ba04142", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LA", title: "Lecciones aprendidas", url: "./../../RMM/capabilitypatterns/WP_LA_8E00620A.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8fb9b157", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PC_EGR", title: "Plan de capacitación de la EGR", url: "./../../RMM/capabilitypatterns/WP_PC_EGR_DBB60867.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "94bc557f", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PM_EGR", title: "Plan de Mejora a la EGR", url: "./../../RMM/capabilitypatterns/WP_PM_EGR_2BEF981F.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3b19c6af", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PR", title: "Política de Riesgos", url: "./../../RMM/capabilitypatterns/WP_PR_9E6A773D.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "3bad39bb", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_CR", title: "Criterios del riesgo", url: "./../../RMM/capabilitypatterns/WP_CR_585E794C.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8eedcd5f", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_CR", title: "Informes de validación a los Criterios del riesgo ", url: "./../../RMM/capabilitypatterns/WP_IV_CR_42DA47C3.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8fbf54c1", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCFRA", title: "Lista de categorías y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCFRA_CDBE04ED.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "9394512a", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCSRA", title: "Lista de categorías y subcategorías de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCSRA_29761147.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e33885a9", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.01", title: "A1.01: Establecer o actualizar las categorías de riesgos y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/GR_A1.01_49EE0D0A.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "87cc0b7a", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.02", title: "A1.02: Definir o actualizar los criterios del riesgo del activo", url: "./../../RMM/capabilitypatterns/GR_A1.02_38872120.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "83917084", parentId: "896143d9", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.03", title: "A1.03: Establecer o actualizar el plan de gestión de riesgos (PGR) del activo", url: "./../../RMM/capabilitypatterns/GR_A1.03_43250130.html", 
+	predecessors: "", info: "Actúa como adicional", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8a5e7959", parentId: "", relPath: ",_Q54it60uEeuleM-t5CAq6g", isSuppressed: "", indentSize: 0, hasChildren:true, 
+	index: "", prefix: "", name: "RA", title: "Responsable del activo", url: "./../../RMM/capabilitypatterns/RA_7090B914.html", 
+	predecessors: "", info: "", type: "Descriptor de roles", 
+	repeatable: "", multiOccurences: "false", optional: "false", planned: "false",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e1a13f1b", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_Apr_PGRA", title: "Acta de aprobación del PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_Acta_Apr_PGRA_55162D84.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "39e38072", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IE_PGRA", title: "Informe de evaluación al PGR del activo", url: "./../../RMM/capabilitypatterns/WP_IE_PGRA_9B222B75.html", 
+	predecessors: "", info: "Responsable de", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "86d1ce3e", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_Apr_PGRA", title: "Acta de aprobación del PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_Acta_Apr_PGRA_55162D84.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "94278be2", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_Acta_AFR_GRA", title: "Acta de asignación de funciones y responsabilidades en la GR del Activo", url: "./../../RMM/capabilitypatterns/WP_Acta_AFR_GRA_1AA53345.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "8554c32b", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_CR", title: "Criterios del riesgo", url: "./../../RMM/capabilitypatterns/WP_CR_585E794C.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e24b999c", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_CR", title: "Informes de validación a los Criterios del riesgo ", url: "./../../RMM/capabilitypatterns/WP_IV_CR_42DA47C3.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dba918f8", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_IV_PGRA", title: "Informes de validación al PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_IV_PGRA_9E92541D.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "ddf20085", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCFRA", title: "Lista de categorías y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCFRA_CDBE04ED.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "930c648e", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_LCSRA", title: "Lista de categorías y subcategorías de riesgos del activo", url: "./../../RMM/capabilitypatterns/WP_LCSRA_29761147.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "916198ce", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PCOM_PGRA", title: "Plan de comunicación del PGR del Activo", url: "./../../RMM/capabilitypatterns/WP_PCOM_PGRA_765D3F9F.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "828cda18", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "WP_PGRA", title: "Plan de Gestión de Riesgos del Activo", url: "./../../RMM/capabilitypatterns/WP_PGRA_6BAD3B02.html", 
+	predecessors: "", info: "Modifica", type: "Descriptor de artefacto", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "dd247689", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.01", title: "A1.01: Establecer o actualizar las categorías de riesgos y factores de riesgos del activo", url: "./../../RMM/capabilitypatterns/GR_A1.01_49EE0D0A.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "e23cdd05", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.02", title: "A1.02: Definir o actualizar los criterios del riesgo del activo", url: "./../../RMM/capabilitypatterns/GR_A1.02_38872120.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+
+{id: "357d7d2f", parentId: "8a5e7959", relPath: "", isSuppressed: "", indentSize: 1, hasChildren:false, 
+	index: "", prefix: "", name: "GR_A1.03", title: "A1.03: Establecer o actualizar el plan de gestión de riesgos (PGR) del activo", url: "./../../RMM/capabilitypatterns/GR_A1.03_43250130.html", 
+	predecessors: "", info: "Actúa como propietario", type: "Descriptor de tareas", 
+	repeatable: "", multiOccurences: "", optional: "", planned: "",  ongoing: "", eventDriven: "", 
+	team: "", entryState: "", exitState: "", deliverable: "", variabilityType: ""},
+	
+
+		
+]};
+				</script>
+</div>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script language="JavaScript" type="text/javascript">
+				contentPage.onload();
+			</script>
+</html>
