@@ -15,12 +15,12 @@
 ContentPageResource = function() {
 
 
-this.expandAllText = "Expandir todas las seccciones";
-this.collapseAllText = "Contraer todas las seccciones";
-this.backToTopText = "Volver al inicio";
+this.expandAllText = "Expand All Sections";
+this.collapseAllText = "Collapse All Sections";
+this.backToTopText = "Back to top";
 
-this.expandAllSubSectionsText = "Expandir todos los pasos";
-this.collapseAllSubSectionsText = "Contraer todos los pasos";
+this.expandAllSubSectionsText = "Expand All Steps";
+this.collapseAllSubSectionsText = "Collapse All Steps";
 
 this.toolbar_bookmark = "Bookmark this page";
 this.toolbar_back = "Back";
